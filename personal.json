@@ -1,0 +1,163 @@
+{
+  "site": {
+    "language": "en",
+    "title": "Paweł Wasilewski — Software Engineer · visionOS · AI · Apple Platforms",
+    "description": "Paweł Wasilewski — Software Engineer, visionOS developer, mentor, dev trainer and speaker. Building Spatial Computing and AI on Apple platforms."
+  },
+  "person": {
+    "name": "Paweł Wasilewski",
+    "firstName": "Paweł",
+    "lastName": "Wasilewski",
+    "avatar": "assets/pw_hero_bw.png",
+    "roles": ["Software Engineer", "Mentor", "Speaker"],
+    "specialties": [
+      "Spatial Computing",
+      "Apple Platforms",
+      "AI",
+      "visionOS",
+      "Swift",
+      "SwiftUI",
+      ".NET",
+      "C#",
+      "JavaScript"
+    ],
+    "stats": [
+      {
+        "type": "years-since",
+        "startYear": 2007,
+        "suffix": "+",
+        "label": "years engineering"
+      },
+      {
+        "type": "years-since",
+        "startYear": 2018,
+        "suffix": "+",
+        "label": "years teaching"
+      },
+      {
+        "type": "static",
+        "value": "∞",
+        "label": "curiosity"
+      }
+    ]
+  },
+  "sections": {
+    "hero": {
+      "id": "hero",
+      "headline": "Spatial Computing · AI · visionOS · Swift · .NET · JavaScript",
+      "subtitle": "— I'm Paweł Wasilewski, a Software Engineer, Mentor and Speaker."
+    },
+    "about": {
+      "id": "about",
+      "title": "About Me",
+      "professional": [
+        "I build software for the next generation of computing — where Spatial Computing, AI, Apple platforms, and real-world problems meet.",
+        "My work spans enterprise systems, healthcare XR, developer education, and Apple Vision Pro applications. I started with .NET, JavaScript, and business software, then gradually moved toward immersive products and spatial experiences.",
+        "I also teach and mentor developers — helping people understand technology deeply, build confidence, and grow into stronger software professionals."
+      ],
+      "headline": "A constant drive to learn, connect ideas, and build what does not exist yet.",
+      "now": [
+        "Today, I focus on Swift, visionOS, and AI-assisted workflows — building spatial experiences for healthcare, education, collaboration, creative entertainment, relaxation, and well-being.",
+        "Outside of work, I'm drawn to sport, faith, psychology, and personal growth — especially where they connect with discipline, meaning, learning, and human potential."
+      ],
+      "beyond": "Outside of work, I'm drawn to sport, faith, psychology, and personal growth — and to the deeper question of how technology can help people learn, collaborate, and live more meaningful lives."
+    },
+    "focus": {
+      "id": "focus",
+      "title": "Areas of Focus",
+      "areas": [
+        {
+          "icon": "ᯅ",
+          "title": "Spatial Computing & visionOS",
+          "description": "Immersive applications for Apple Vision Pro — spatial UI, real-time collaboration, 3D content and human-centered interactions."
+        },
+        {
+          "icon": "",
+          "title": "Apple Platforms",
+          "description": "Native apps for visionOS, iOS, iPadOS and macOS — built with Swift, SwiftUI and a strong focus on thoughtful, polished design."
+        },
+        {
+          "icon": "✦",
+          "title": "AI & Intelligent Applications",
+          "description": "AI-assisted workflows and intelligent product features designed around real human needs, not hype."
+        },
+        {
+          "icon": "⨁",
+          "title": "Healthcare XR & Telepresence",
+          "description": "Spatial experiences for medical training, robotic surgery education, remote collaboration and immersive learning."
+        },
+        {
+          "icon": "⌬",
+          "title": "Architecture & Full-Stack Engineering",
+          "description": "Reliable, maintainable systems — from .NET backends and APIs to JavaScript frontends and complex product domains."
+        },
+        {
+          "icon": "⌘",
+          "title": "Mentoring & Developer Education",
+          "description": "Workshops, lectures and mentoring for developers who want to grow stronger engineering judgment and practical skills."
+        }
+      ]
+    },
+    "projects": {
+      "id": "projects",
+      "title": "Selected Projects",
+      "subtitle": "Selected recent work on Apple platforms — immersive healthcare, education, telepresence, spatial experiences, and human-centered experiences.",
+      "items": [
+        {
+          "title": "apoQlar HoloMedicine® Robotics Pro",
+          "description": "Spatial 3D surgical streaming experience for Apple Vision Pro, supporting robotic surgery training, telepresence, remote collaboration, and immersive medical education.",
+          "tags": ["Telepresence", "visionOS"],
+          "link": "https://apps.apple.com/us/app/holomedicine-robotics-pro/id6741842259"
+        },
+        {
+          "title": "apoQlar HoloMedicine® Simulation",
+          "description": "Interactive medical simulation experience for Apple Vision Pro and iPad, combining spatial learning, guided procedures, 3D medical content, and immersive education workflows.",
+          "tags": ["Education", "visionOS/iPadOS"],
+          "link": "https://apps.apple.com/us/app/holomedicine-simulation/id6742405679"
+        }
+      ]
+    },
+    "posts": {
+      "id": "posts",
+      "title": "Posts & Thoughts",
+      "subtitle": "Short thoughts on Spatial Computing, AI and Apple platforms.",
+      "enabled": false
+    },
+    "contact": {
+      "id": "contact",
+      "title": "Let's build something meaningful.",
+      "subtitle": "Interested in working together or have a question? Feel free to reach out!",
+      "methods": [
+        {
+          "type": "email",
+          "label": "Email",
+          "value": "pawel@pwasilewski.com",
+          "href": "mailto:pawel@pwasilewski.com"
+        },
+        {
+          "type": "github",
+          "label": "GitHub",
+          "value": "@pwasilewski-pl",
+          "href": "https://github.com/pwasilewski-pl"
+        },
+        {
+          "type": "linkedin",
+          "label": "LinkedIn",
+          "value": "/in/pwasilewski",
+          "href": "https://www.linkedin.com/in/pwasilewski/"
+        }
+      ]
+    },
+    "footer": {
+      "title": "© 2026 Paweł Wasilewski · Crafted with care."
+    }
+  },
+  "posts": [
+    {
+      "title": "Post title",
+      "date": "2026-07-01",
+      "excerpt": "Post excerpt goes here. A short summary of the post content to entice readers to click and read more.",
+      "tags": ["visionOS", "Spatial Computing", "AI"]
+    }
+  ]
+}
