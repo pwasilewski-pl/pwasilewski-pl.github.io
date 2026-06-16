@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Paweł Wasilewski — Software Engineer · visionOS · AI · Apple Platforms
+    </title>
+    <meta
+      name="description"
+      content="Paweł Wasilewski — Software Engineer, visionOS developer, mentor, dev trainer and speaker. Building Spatial Computing and AI on Apple platforms."
+    />
+    <meta name="theme-color" content="#08090c" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Ambient background -->
+    <div class="ambient" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid"></div>
+    </div>
+
+    <header class="site-header">
+      <a href="#top" class="brand" aria-label="Paweł Wasilewski — home">
+        <img
+          class="brand-mark"
+          src="assets/avatar_wwdc.jpeg"
+          alt=""
+          width="36"
+          height="36"
+        />
+        <span class="brand-name">Paweł Wasilewski</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#focus">Focus</a>
+        <!-- <a href="#notes">Notes</a> -->
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Software Engineer · Mentor · Speaker</p>
+        <h1 id="hero-title">
+          Paweł <span class="gradient-text">Wasilewski</span>
+        </h1>
+        <p class="headline">visionOS · AI · Swift · .NET · JavaScript</p>
+        <p class="intro">
+          I build Spatial Computing and AI solutions on Apple platforms,
+          combining
+          <strong data-years-since="2007">+ years</strong> of software
+          engineering experience with modern product thinking.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">Contact me</a>
+        </div>
+        <ul class="chip-row" aria-label="Core technologies">
+          <li>visionOS</li>
+          <li>AI</li>
+          <li>Swift</li>
+          <li>SwiftUI</li>
+          <li>.NET</li>
+          <li>C#</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <header class="section-head">
+          <span class="section-tag">About</span>
+          <h2 id="about-title">
+            A senior engineer at the edge of Apple, Spatial Computing and AI.
+          </h2>
+        </header>
+        <div class="glass about-card">
+          <p>
+            Senior Software Engineer with
+            <strong data-years-since="2007">+</strong> years of experience in
+            enterprise software, full-stack development and developer education.
+            Currently focused on Apple platforms, visionOS, Spatial Computing
+            and AI. I enjoy turning ambitious ideas into reliable, meaningful
+            products.
+          </p>
+          <ul class="stat-row" aria-label="Highlights">
+            <li>
+              <strong data-years-since="2007">+</strong
+              ><span>years engineering</span>
+            </li>
+            <li>
+              <strong data-years-since="2018">+</strong
+              ><span>years teaching</span>
+            </li>
+            <li><strong>∞</strong><span>curiosity</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- FOCUS -->
+      <section class="section" id="focus" aria-labelledby="focus-title">
+        <header class="section-head">
+          <span class="section-tag">Focus</span>
+          <h2 id="focus-title">What I focus on</h2>
+        </header>
+        <div class="grid-cards" id="focus-grid" role="list"></div>
+      </section>
+
+      <!-- NOTES / MICRO-BLOG -->
+      <!-- <section class="section" id="notes" aria-labelledby="notes-title">
+        <header class="section-head">
+          <span class="section-tag">Writing</span>
+          <h2 id="notes-title">Notes</h2>
+          <p class="section-sub">
+            Short thoughts on Spatial Computing, AI and Apple platforms.
+          </p>
+        </header>
+        <div class="grid-cards" id="posts-grid" role="list"></div>
+      </section> -->
+
+      <!-- CONTACT -->
+      <section
+        class="section contact"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <header class="section-head">
+          <span class="section-tag">Contact</span>
+          <h2 id="contact-title">Let's build something meaningful.</h2>
+          <p class="section-sub">
+            Open to collaboration, speaking, mentoring and consulting.
+          </p>
+        </header>
+        <div class="contact-row">
+          <a class="contact-link glass" href="mailto:pawel@pwasilewski.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">pawel@pwasilewski.com</span>
+          </a>
+          <a
+            class="contact-link glass"
+            href="https://github.com/pwasilewski-pl"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">@pwasilewski-pl</span>
+          </a>
+          <a
+            class="contact-link glass"
+            href="https://www.linkedin.com/in/pwasilewski/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">/in/pwasilewski</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Paweł Wasilewski · Crafted with care.</p>
+    </footer>
+
+    <script>
+      // -----------------------------------------------------------------
+      // Data — easy to extend later
+      // -----------------------------------------------------------------
+      const focusAreas = [
+        {
+          icon: "",
+          title: "Apple Platforms",
+          desc: "iOS, iPadOS, macOS and visionOS — native, polished, performant.",
+        },
+        {
+          icon: "ᯅ",
+          title: "Spatial Computing & visionOS",
+          desc: "Immersive apps for Apple Vision Pro — spatial UI, interactions and depth.",
+        },
+        {
+          icon: "✦",
+          title: "AI & Intelligent Applications",
+          desc: "On-device and cloud AI features designed around real human workflows.",
+        },
+        {
+          icon: "◇",
+          title: "Mentoring & Dev Training",
+          desc: "Workshops, 1:1 mentoring and talks for engineers leveling up their craft.",
+        },
+        {
+          icon: "⌘",
+          title: "Swift & SwiftUI",
+          desc: "Modern Swift architectures, SwiftUI, Swift Concurrency and modular design.",
+        },
+        {
+          icon: "⧉",
+          title: ".NET & Enterprise Software",
+          desc: "C# and .NET for reliable backends, integrations and complex domains.",
+        },
+        {
+          icon: "⟨⟩",
+          title: "JavaScript & TypeScript",
+          desc: "Front-end web development with JS & TS, clean APIs and pragmatic frontends.",
+        },
+      ];
+
+      const projects = [
+        {
+          title: "ClayStudio",
+          date: "2025",
+          description:
+            "Spatial pottery experience for Apple Vision Pro — sculpt clay with your hands in mixed reality.",
+          tags: ["visionOS", "SwiftUI", "Spatial"],
+          link: "#",
+        },
+        {
+          title: "Healthcare XR",
+          date: "2024 — present",
+          description:
+            "Immersive training and telepresence solutions for healthcare scenarios on Apple Vision Pro.",
+          tags: ["visionOS", "Healthcare", "XR"],
+          link: null,
+        },
+        {
+          title: "Dev Training Programs",
+          date: "Ongoing",
+          description:
+            "Workshops and mentoring tracks for Swift, SwiftUI, visionOS and modern .NET teams.",
+          tags: ["Mentoring", "Swift", ".NET"],
+          link: null,
+        },
+      ];
+
+      // Add posts here — the list renders automatically.
+      const posts = [
+        {
+          title: "Why Spatial Computing matters",
+          date: "2026-06-16",
+          excerpt:
+            "Short thoughts on Apple Vision Pro, AI and the next generation of software.",
+          tags: ["visionOS", "Spatial Computing", "AI"],
+        },
+        {
+          title: "Swift Concurrency in real projects",
+          date: "2026-05-22",
+          excerpt:
+            "What actually works (and what hurts) when shipping async/await across iOS and visionOS apps.",
+          tags: ["Swift", "Concurrency"],
+        },
+        {
+          title: "AI features users actually want",
+          date: "2026-04-10",
+          excerpt:
+            "Designing AI capabilities that feel like quiet superpowers, not gimmicks.",
+          tags: ["AI", "Product"],
+        },
+      ];
+
+      // -----------------------------------------------------------------
+      // Renderers
+      // -----------------------------------------------------------------
+      const el = (tag, attrs = {}, children = []) => {
+        const node = document.createElement(tag);
+        for (const [k, v] of Object.entries(attrs)) {
+          if (k === "class") node.className = v;
+          else if (k === "html") node.innerHTML = v;
+          else node.setAttribute(k, v);
+        }
+        (Array.isArray(children) ? children : [children]).forEach((c) => {
+          if (c == null) return;
+          node.appendChild(
+            typeof c === "string" ? document.createTextNode(c) : c,
+          );
+        });
+        return node;
+      };
+
+      const tagList = (tags) => {
+        const ul = el("ul", { class: "tags", "aria-label": "Tags" });
+        tags.forEach((t) => ul.appendChild(el("li", {}, t)));
+        return ul;
+      };
+
+      function renderFocus() {
+        const grid = document.getElementById("focus-grid");
+        focusAreas.forEach((f) => {
+          const card = el("article", {
+            class: "glass card focus-card",
+            role: "listitem",
+          });
+          card.appendChild(
+            el("div", { class: "focus-icon", "aria-hidden": "true" }, f.icon),
+          );
+          card.appendChild(el("h3", {}, f.title));
+          card.appendChild(el("p", {}, f.desc));
+          grid.appendChild(card);
+        });
+      }
+
+      // function renderPosts() {
+      //   const grid = document.getElementById("posts-grid");
+      //   const sorted = [...posts].sort((a, b) => (a.date < b.date ? 1 : -1));
+      //   sorted.forEach((p) => {
+      //     const card = el("article", {
+      //       class: "glass card post-card",
+      //       role: "listitem",
+      //     });
+      //     const date = new Date(p.date).toLocaleDateString("en-US", {
+      //       year: "numeric",
+      //       month: "short",
+      //       day: "numeric",
+      //     });
+      //     card.appendChild(
+      //       el("time", { class: "card-date", datetime: p.date }, date),
+      //     );
+      //     card.appendChild(el("h3", {}, p.title));
+      //     card.appendChild(el("p", {}, p.excerpt));
+      //     if (p.tags?.length) card.appendChild(tagList(p.tags));
+      //     grid.appendChild(card);
+      //   });
+      // }
+
+      // -----------------------------------------------------------------
+      // Interactions
+      // -----------------------------------------------------------------
+      function smoothScroll() {
+        document.querySelectorAll('a[href^="#"]').forEach((a) => {
+          a.addEventListener("click", (e) => {
+            const id = a.getAttribute("href").slice(1);
+            if (!id) return;
+            const target = document.getElementById(id);
+            if (!target) return;
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        });
+      }
+
+      function setupActiveNav() {
+        const header = document.querySelector(".site-header");
+        const navItems = Array.from(
+          document.querySelectorAll('.site-nav a[href^="#"]'),
+        )
+          .map((link) => {
+            const id = link.getAttribute("href").slice(1);
+            const section = document.getElementById(id);
+            return section ? { link, section } : null;
+          })
+          .filter(Boolean);
+
+        if (!navItems.length) return;
+
+        let ticking = false;
+
+        const setActiveLink = (activeId) => {
+          navItems.forEach(({ link, section }) => {
+            const isActive = section.id === activeId;
+            link.classList.toggle("is-active", isActive);
+            if (isActive) link.setAttribute("aria-current", "location");
+            else link.removeAttribute("aria-current");
+          });
+        };
+
+        const updateActiveLink = () => {
+          ticking = false;
+
+          const headerHeight = header ? header.offsetHeight : 0;
+          const activationLine =
+            headerHeight + Math.min(window.innerHeight * 0.35, 220);
+          let activeId = navItems[0].section.id;
+
+          navItems.forEach(({ section }) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= activationLine) activeId = section.id;
+            if (rect.top <= activationLine && rect.bottom >= activationLine) {
+              activeId = section.id;
+            }
+          });
+
+          setActiveLink(activeId);
+        };
+
+        const requestUpdate = () => {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(updateActiveLink);
+        };
+
+        window.addEventListener("scroll", requestUpdate, { passive: true });
+        window.addEventListener("resize", requestUpdate);
+        requestUpdate();
+      }
+
+      function revealOnScroll() {
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((en) => {
+              if (en.isIntersecting) {
+                en.target.classList.add("is-visible");
+                io.unobserve(en.target);
+              }
+            });
+          },
+          { threshold: 0.12 },
+        );
+        document
+          .querySelectorAll(".section, .hero")
+          .forEach((s) => io.observe(s));
+      }
+
+      function parallaxOrbs() {
+        const orbs = document.querySelectorAll(".orb");
+        if (
+          !orbs.length ||
+          matchMedia("(prefers-reduced-motion: reduce)").matches
+        )
+          return;
+        window.addEventListener(
+          "pointermove",
+          (e) => {
+            const x = (e.clientX / window.innerWidth - 0.5) * 20;
+            const y = (e.clientY / window.innerHeight - 0.5) * 20;
+            orbs.forEach((o, i) => {
+              const f = (i + 1) * 0.6;
+              o.style.transform = `translate3d(${x * f}px, ${y * f}px, 0)`;
+            });
+          },
+          { passive: true },
+        );
+      }
+
+      function renderYearsSince() {
+        const currentYear = new Date().getFullYear();
+        document.querySelectorAll("[data-years-since]").forEach((node) => {
+          const startYear = Number(node.getAttribute("data-years-since"));
+          if (!Number.isFinite(startYear)) return;
+          node.textContent =
+            String(Math.max(0, currentYear - startYear)) + node.textContent;
+        });
+      }
+
+      // -----------------------------------------------------------------
+      // Init
+      // -----------------------------------------------------------------
+      document.getElementById("year").textContent = new Date().getFullYear();
+      renderYearsSince();
+      renderFocus();
+      // renderPosts();
+      setupActiveNav();
+      smoothScroll();
+      revealOnScroll();
+      parallaxOrbs();
+    </script>
+  </body>
+</html>
