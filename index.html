@@ -1,458 +1,235 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Paweł Wasilewski — Software Engineer · visionOS · AI · Apple Platforms
-    </title>
-    <meta
-      name="description"
-      content="Paweł Wasilewski — Software Engineer, visionOS developer, mentor, dev trainer and speaker. Building Spatial Computing and AI on Apple platforms."
-    />
-    <meta name="theme-color" content="#08090c" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Ambient background -->
-    <div class="ambient" aria-hidden="true">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-      <div class="grid"></div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Paweł Wasilewski — Software Engineer · visionOS · AI · Apple Platforms
+  </title>
+  <meta
+    name="description"
+    content="Paweł Wasilewski — Software Engineer, visionOS developer, mentor, dev trainer and speaker. Building Spatial Computing and AI on Apple platforms."
+  />
+  <meta name="author" content="Paweł Wasilewski" />
+  <meta name="theme-color" content="#f8f8f8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#" class="logo" aria-label="Paweł Wasilewski">ᯅ</a>
+      <a href="#about">About</a>
+      <a href="#focus">Focus</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="cta">Let's Talk ↗</a>
+    </nav>
+  </header>
 
-    <header class="site-header">
-      <a href="#top" class="brand" aria-label="Paweł Wasilewski — home">
-        <img
-          class="brand-mark"
-          src="assets/avatar_wwdc.jpeg"
-          alt=""
-          width="36"
-          height="36"
-        />
-        <span class="brand-name">Paweł Wasilewski</span>
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#focus">Focus</a>
-        <!-- <a href="#notes">Notes</a> -->
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <!-- HERO -->
-      <section class="hero" aria-labelledby="hero-title">
-        <p class="eyebrow">Software Engineer · Mentor · Speaker</p>
-        <h1 id="hero-title">
-          Paweł <span class="gradient-text">Wasilewski</span>
-        </h1>
-        <p class="headline">visionOS · AI · Swift · .NET · JavaScript</p>
-        <p class="intro">
-          I build Spatial Computing and AI solutions on Apple platforms,
-          combining
-          <strong data-years-since="2007">+ years</strong> of software
-          engineering experience with modern product thinking.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#contact">Contact me</a>
+  <main>
+    <section class="hero" aria-label="Introduction">
+      <article class="hero-content">
+        <dl class="stats" aria-label="Career stats">
+          <div class="stat">
+            <dt class="stat-label">years engineering</dt>
+            <dd class="stat-number">
+              <span data-years-since="2007"></span><span class="stat-suffix" aria-hidden="true">+</span>
+            </dd>
+          </div>
+          <div class="stat">
+            <dt class="stat-label">years teaching</dt>
+            <dd class="stat-number">
+              <span data-years-since="2018"></span><span class="stat-suffix" aria-hidden="true">+</span>
+            </dd>
+          </div>
+          <div class="stat">
+            <dt class="stat-label">curiosity</dt>
+            <dd class="stat-number">∞</dd>
+          </div>
+        </dl>
+        <div class="intro">
+          <h1>Hello</h1>
+          <h2>— I'm Paweł Wasilewski, a Software Engineer, Mentor and Speaker.</h2>
+          <h3>Spatial Computing · AI · visionOS · Swift · .NET · JavaScript</h3>
         </div>
-        <ul class="chip-row" aria-label="Core technologies">
-          <li>visionOS</li>
-          <li>AI</li>
-          <li>Swift</li>
-          <li>SwiftUI</li>
-          <li>.NET</li>
-          <li>C#</li>
-          <li>JavaScript</li>
-        </ul>
-      </section>
+      </article>
 
-      <!-- ABOUT -->
-      <section class="section" id="about" aria-labelledby="about-title">
-        <header class="section-head">
-          <span class="section-tag">About</span>
-          <h2 id="about-title">
-            A senior engineer at the edge of Apple, Spatial Computing and AI.
-          </h2>
-        </header>
-        <div class="glass about-card">
-          <p>
-            Senior Software Engineer with
-            <strong data-years-since="2007">+</strong> years of experience in
-            enterprise software, full-stack development and developer education.
-            Currently focused on Apple platforms, visionOS, Spatial Computing
-            and AI. I enjoy turning ambitious ideas into reliable, meaningful
-            products.
-          </p>
-          <ul class="stat-row" aria-label="Highlights">
-            <li>
-              <strong data-years-since="2007">+</strong
-              ><span>years engineering</span>
-            </li>
-            <li>
-              <strong data-years-since="2018">+</strong
-              ><span>years teaching</span>
-            </li>
-            <li><strong>∞</strong><span>curiosity</span></li>
+      <figure class="portrait">
+        <img src="/assets/pw_hero_bw.png" alt="Portrait of Paweł Wasilewski" />
+      </figure>
+    </section>
+
+    <section id="about" aria-label="About Me">
+      <div class="about-content">
+        <article>
+          <h2>About Me</h2>
+          <ul>
+            <li>I build software for the next generation of computing — where Spatial Computing, AI, Apple platforms, and real-world problems meet.</li>
+            <li>My work spans enterprise systems, healthcare XR, developer education, and Apple Vision Pro applications. I started with .NET, JavaScript, and business software, then gradually moved toward immersive products and spatial experiences.</li>
+            <li>I also teach and mentor developers — helping people understand technology deeply, build confidence, and grow into stronger software professionals.</li>
           </ul>
-        </div>
-      </section>
+        </article>
+        <article>
+          <div class="card">
+            <dl class="stats" aria-label="About Curiosity">
+              <div class="stat">
+                <dt class="stat-label">curiosity</dt>
+                <dd class="stat-number">∞</dd>
+              </div>
+            </dl>
+            <p>A constant drive to learn, connect ideas, and build what does not exist yet.</p>
+            <img src="/assets/wwdc_apple_park.jpeg" alt="Curiosity at WWDC, Apple Park" />
+          </div>
+        </article>
+        <article>
+          <img src="/assets/wwdc_steve_jobs_theater.jpeg" alt="WWDC, Steve Jobs Theater" />
+          <ul>
+            <li>Today, I focus on Swift, visionOS, and AI-assisted workflows — building spatial experiences for healthcare, education, collaboration, creative entertainment, relaxation, and well-being.</li>
+            <li>Outside of work, I'm drawn to sport, faith, psychology, and personal growth — especially where they connect with discipline, meaning, learning, and human potential.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-      <!-- FOCUS -->
-      <section class="section" id="focus" aria-labelledby="focus-title">
-        <header class="section-head">
-          <span class="section-tag">Focus</span>
-          <h2 id="focus-title">What I focus on</h2>
-        </header>
-        <div class="grid-cards" id="focus-grid" role="list"></div>
-      </section>
+    <section id="focus" aria-label="Areas of Focus">
+      <h2>Areas of Focus</h2>
+      <div class="grid-cards">
+        <article class="card">
+          <span class="card-icon">ᯅ</span>
+          <h3>Spatial Computing &amp; visionOS</h3>
+          <p>Immersive applications for Apple Vision Pro — spatial UI, real-time collaboration, 3D content and human-centered interactions.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon"></span>
+          <h3>Apple Platforms</h3>
+          <p>Native apps for visionOS, iOS, iPadOS and macOS — built with Swift, SwiftUI and a strong focus on thoughtful, polished design.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon">✦</span>
+          <h3>AI &amp; Intelligent Applications</h3>
+          <p>AI-assisted workflows and intelligent product features designed around real human needs, not hype.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon">⨁</span>
+          <h3>Healthcare XR &amp; Telepresence</h3>
+          <p>Spatial experiences for medical training, robotic surgery education, remote collaboration and immersive learning.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon">⌬</span>
+          <h3>Architecture &amp; Full-Stack Engineering</h3>
+          <p>Reliable, maintainable systems — from .NET backends and APIs to JavaScript frontends and complex product domains.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon">⌘</span>
+          <h3>Mentoring &amp; Developer Education</h3>
+          <p>Workshops, lectures and mentoring for developers who want to grow stronger engineering judgment and practical skills.</p>
+        </article>
+      </div>
+    </section>
 
-      <!-- NOTES / MICRO-BLOG -->
-      <!-- <section class="section" id="notes" aria-labelledby="notes-title">
-        <header class="section-head">
-          <span class="section-tag">Writing</span>
-          <h2 id="notes-title">Notes</h2>
-          <p class="section-sub">
-            Short thoughts on Spatial Computing, AI and Apple platforms.
-          </p>
-        </header>
-        <div class="grid-cards" id="posts-grid" role="list"></div>
-      </section> -->
+    <section id="projects" class="auto-height" aria-label="Selected Projects">
+      <header>
+        <h2>Selected Projects</h2>
+        <p>Selected recent work on Apple platforms — immersive healthcare, education, telepresence, spatial experiences, and human-centered experiences.</p>
+      </header>
 
-      <!-- CONTACT -->
-      <section
-        class="section contact"
-        id="contact"
-        aria-labelledby="contact-title"
-      >
-        <header class="section-head">
-          <span class="section-tag">Contact</span>
-          <h2 id="contact-title">Let's build something meaningful.</h2>
-          <p class="section-sub">
-            Open to collaboration, speaking, mentoring and consulting.
-          </p>
-        </header>
-        <div class="contact-row">
-          <a class="contact-link glass" href="mailto:pawel@pwasilewski.com">
-            <span class="contact-label">Email</span>
-            <span class="contact-value">pawel@pwasilewski.com</span>
-          </a>
-          <a
-            class="contact-link glass"
-            href="https://github.com/pwasilewski-pl"
-            target="_blank"
-            rel="noopener"
-          >
-            <span class="contact-label">GitHub</span>
-            <span class="contact-value">@pwasilewski-pl</span>
-          </a>
-          <a
-            class="contact-link glass"
-            href="https://www.linkedin.com/in/pwasilewski/"
-            target="_blank"
-            rel="noopener"
-          >
-            <span class="contact-label">LinkedIn</span>
-            <span class="contact-value">/in/pwasilewski</span>
-          </a>
-        </div>
-      </section>
-    </main>
+      <div class="projects-list">
+        <article>
+          <header>
+            <h3>apoQlar HoloMedicine® Robotics Pro</h3>
+            <ul aria-label="Key technologies">
+              <li>Telepresence</li>
+              <li>visionOS</li>
+            </ul>
+          </header>
+          <section>
+            <p>
+              Spatial 3D surgical streaming experience for Apple Vision Pro,
+              supporting robotic surgery training, telepresence, remote collaboration,
+              and immersive medical education.
+            </p>
+            <a
+              href="https://apps.apple.com/us/app/holomedicine-robotics-pro/id6741842259"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View apoQlar HoloMedicine Robotics Pro on the App Store"
+            ></a>
+          </section>
+        </article>
+        <article>
+          <header>
+            <h3>apoQlar HoloMedicine® Simulation</h3>
+            <ul aria-label="Key technologies">
+              <li>Education</li>
+              <li>visionOS/iPadOS</li>
+            </ul>
+          </header>
+          <section>
+            <p>
+              Interactive medical simulation experience for Apple Vision Pro and iPad,
+              combining spatial learning, guided procedures, 3D medical content, and
+              immersive education workflows.
+            </p>
+            <a
+              href="https://apps.apple.com/us/app/holomedicine-simulation/id6742405679"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View apoQlar HoloMedicine Simulation on the App Store"
+            ></a>
+          </section>
+        </article>
+      </div>
+    </section>
 
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Paweł Wasilewski · Crafted with care.</p>
-    </footer>
+    <section id="contact" class="auto-height" aria-label="Contact">
+      <article>
+        <h2>Let's build something meaningful.</h2>
+        <p>Interested in working together or have a question? Feel free to reach out!</p>
+      </article>
+      <article class="grid-cards">
+        <a class="card" href="mailto:pawel@pwasilewski.com">
+          <span>Email</span>
+          <span>pawel@pwasilewski.com</span>
+        </a>
+        <a class="card" href="https://www.linkedin.com/in/pwasilewski/" target="_blank" rel="noopener noreferrer">
+          <span>LinkedIn</span>
+          <span>/in/pwasilewski</span>
+        </a>
+        <a class="card" href="https://github.com/pwasilewski-pl" target="_blank" rel="noopener noreferrer">
+          <span>GitHub</span>
+          <span>@pwasilewski-pl</span>
+        </a>
+      </article>
+      <footer>© 2026 Paweł Wasilewski · Crafted with care.</footer>
+    </section>
+  </main>
 
-    <script>
-      // -----------------------------------------------------------------
-      // Data — easy to extend later
-      // -----------------------------------------------------------------
-      const focusAreas = [
-        {
-          icon: "",
-          title: "Apple Platforms",
-          desc: "iOS, iPadOS, macOS and visionOS — native, polished, performant.",
-        },
-        {
-          icon: "ᯅ",
-          title: "Spatial Computing & visionOS",
-          desc: "Immersive apps for Apple Vision Pro — spatial UI, interactions and depth.",
-        },
-        {
-          icon: "✦",
-          title: "AI & Intelligent Applications",
-          desc: "On-device and cloud AI features designed around real human workflows.",
-        },
-        {
-          icon: "◇",
-          title: "Mentoring & Dev Training",
-          desc: "Workshops, 1:1 mentoring and talks for engineers leveling up their craft.",
-        },
-        {
-          icon: "⌘",
-          title: "Swift & SwiftUI",
-          desc: "Modern Swift architectures, SwiftUI, Swift Concurrency and modular design.",
-        },
-        {
-          icon: "⧉",
-          title: ".NET & Enterprise Software",
-          desc: "C# and .NET for reliable backends, integrations and complex domains.",
-        },
-        {
-          icon: "⟨⟩",
-          title: "JavaScript & TypeScript",
-          desc: "Front-end web development with JS & TS, clean APIs and pragmatic frontends.",
-        },
-      ];
-
-      const projects = [
-        {
-          title: "ClayStudio",
-          date: "2025",
-          description:
-            "Spatial pottery experience for Apple Vision Pro — sculpt clay with your hands in mixed reality.",
-          tags: ["visionOS", "SwiftUI", "Spatial"],
-          link: "#",
-        },
-        {
-          title: "Healthcare XR",
-          date: "2024 — present",
-          description:
-            "Immersive training and telepresence solutions for healthcare scenarios on Apple Vision Pro.",
-          tags: ["visionOS", "Healthcare", "XR"],
-          link: null,
-        },
-        {
-          title: "Dev Training Programs",
-          date: "Ongoing",
-          description:
-            "Workshops and mentoring tracks for Swift, SwiftUI, visionOS and modern .NET teams.",
-          tags: ["Mentoring", "Swift", ".NET"],
-          link: null,
-        },
-      ];
-
-      // Add posts here — the list renders automatically.
-      const posts = [
-        {
-          title: "Why Spatial Computing matters",
-          date: "2026-06-16",
-          excerpt:
-            "Short thoughts on Apple Vision Pro, AI and the next generation of software.",
-          tags: ["visionOS", "Spatial Computing", "AI"],
-        },
-        {
-          title: "Swift Concurrency in real projects",
-          date: "2026-05-22",
-          excerpt:
-            "What actually works (and what hurts) when shipping async/await across iOS and visionOS apps.",
-          tags: ["Swift", "Concurrency"],
-        },
-        {
-          title: "AI features users actually want",
-          date: "2026-04-10",
-          excerpt:
-            "Designing AI capabilities that feel like quiet superpowers, not gimmicks.",
-          tags: ["AI", "Product"],
-        },
-      ];
-
-      // -----------------------------------------------------------------
-      // Renderers
-      // -----------------------------------------------------------------
-      const el = (tag, attrs = {}, children = []) => {
-        const node = document.createElement(tag);
-        for (const [k, v] of Object.entries(attrs)) {
-          if (k === "class") node.className = v;
-          else if (k === "html") node.innerHTML = v;
-          else node.setAttribute(k, v);
-        }
-        (Array.isArray(children) ? children : [children]).forEach((c) => {
-          if (c == null) return;
-          node.appendChild(
-            typeof c === "string" ? document.createTextNode(c) : c,
-          );
-        });
-        return node;
-      };
-
-      const tagList = (tags) => {
-        const ul = el("ul", { class: "tags", "aria-label": "Tags" });
-        tags.forEach((t) => ul.appendChild(el("li", {}, t)));
-        return ul;
-      };
-
-      function renderFocus() {
-        const grid = document.getElementById("focus-grid");
-        focusAreas.forEach((f) => {
-          const card = el("article", {
-            class: "glass card focus-card",
-            role: "listitem",
-          });
-          card.appendChild(
-            el("div", { class: "focus-icon", "aria-hidden": "true" }, f.icon),
-          );
-          card.appendChild(el("h3", {}, f.title));
-          card.appendChild(el("p", {}, f.desc));
-          grid.appendChild(card);
-        });
+  <script>
+    const calculateYearsSince = (startYear, now = new Date()) => {
+      const year = Number(startYear);
+      if (!Number.isFinite(year)) {
+        return '';
       }
+      return Math.max(0, now.getFullYear() - year);
+    };
 
-      // function renderPosts() {
-      //   const grid = document.getElementById("posts-grid");
-      //   const sorted = [...posts].sort((a, b) => (a.date < b.date ? 1 : -1));
-      //   sorted.forEach((p) => {
-      //     const card = el("article", {
-      //       class: "glass card post-card",
-      //       role: "listitem",
-      //     });
-      //     const date = new Date(p.date).toLocaleDateString("en-US", {
-      //       year: "numeric",
-      //       month: "short",
-      //       day: "numeric",
-      //     });
-      //     card.appendChild(
-      //       el("time", { class: "card-date", datetime: p.date }, date),
-      //     );
-      //     card.appendChild(el("h3", {}, p.title));
-      //     card.appendChild(el("p", {}, p.excerpt));
-      //     if (p.tags?.length) card.appendChild(tagList(p.tags));
-      //     grid.appendChild(card);
-      //   });
-      // }
+    const hydrateYearsSince = (root = document) => {
+      root.querySelectorAll('[data-years-since]').forEach((element) => {
+        const startYear = element.dataset.yearsSince;
+        element.textContent = calculateYearsSince(startYear);
+      });
+    };
 
-      // -----------------------------------------------------------------
-      // Interactions
-      // -----------------------------------------------------------------
-      function smoothScroll() {
-        document.querySelectorAll('a[href^="#"]').forEach((a) => {
-          a.addEventListener("click", (e) => {
-            const id = a.getAttribute("href").slice(1);
-            if (!id) return;
-            const target = document.getElementById(id);
-            if (!target) return;
-            e.preventDefault();
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
-          });
-        });
-      }
+    document.querySelector('.scroll')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+    });
 
-      function setupActiveNav() {
-        const header = document.querySelector(".site-header");
-        const navItems = Array.from(
-          document.querySelectorAll('.site-nav a[href^="#"]'),
-        )
-          .map((link) => {
-            const id = link.getAttribute("href").slice(1);
-            const section = document.getElementById(id);
-            return section ? { link, section } : null;
-          })
-          .filter(Boolean);
-
-        if (!navItems.length) return;
-
-        let ticking = false;
-
-        const setActiveLink = (activeId) => {
-          navItems.forEach(({ link, section }) => {
-            const isActive = section.id === activeId;
-            link.classList.toggle("is-active", isActive);
-            if (isActive) link.setAttribute("aria-current", "location");
-            else link.removeAttribute("aria-current");
-          });
-        };
-
-        const updateActiveLink = () => {
-          ticking = false;
-
-          const headerHeight = header ? header.offsetHeight : 0;
-          const activationLine =
-            headerHeight + Math.min(window.innerHeight * 0.35, 220);
-          let activeId = navItems[0].section.id;
-
-          navItems.forEach(({ section }) => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top <= activationLine) activeId = section.id;
-            if (rect.top <= activationLine && rect.bottom >= activationLine) {
-              activeId = section.id;
-            }
-          });
-
-          setActiveLink(activeId);
-        };
-
-        const requestUpdate = () => {
-          if (ticking) return;
-          ticking = true;
-          requestAnimationFrame(updateActiveLink);
-        };
-
-        window.addEventListener("scroll", requestUpdate, { passive: true });
-        window.addEventListener("resize", requestUpdate);
-        requestUpdate();
-      }
-
-      function revealOnScroll() {
-        const io = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((en) => {
-              if (en.isIntersecting) {
-                en.target.classList.add("is-visible");
-                io.unobserve(en.target);
-              }
-            });
-          },
-          { threshold: 0.12 },
-        );
-        document
-          .querySelectorAll(".section, .hero")
-          .forEach((s) => io.observe(s));
-      }
-
-      function parallaxOrbs() {
-        const orbs = document.querySelectorAll(".orb");
-        if (
-          !orbs.length ||
-          matchMedia("(prefers-reduced-motion: reduce)").matches
-        )
-          return;
-        window.addEventListener(
-          "pointermove",
-          (e) => {
-            const x = (e.clientX / window.innerWidth - 0.5) * 20;
-            const y = (e.clientY / window.innerHeight - 0.5) * 20;
-            orbs.forEach((o, i) => {
-              const f = (i + 1) * 0.6;
-              o.style.transform = `translate3d(${x * f}px, ${y * f}px, 0)`;
-            });
-          },
-          { passive: true },
-        );
-      }
-
-      function renderYearsSince() {
-        const currentYear = new Date().getFullYear();
-        document.querySelectorAll("[data-years-since]").forEach((node) => {
-          const startYear = Number(node.getAttribute("data-years-since"));
-          if (!Number.isFinite(startYear)) return;
-          node.textContent =
-            String(Math.max(0, currentYear - startYear)) + node.textContent;
-        });
-      }
-
-      // -----------------------------------------------------------------
-      // Init
-      // -----------------------------------------------------------------
-      document.getElementById("year").textContent = new Date().getFullYear();
-      renderYearsSince();
-      renderFocus();
-      // renderPosts();
-      setupActiveNav();
-      smoothScroll();
-      revealOnScroll();
-      parallaxOrbs();
-    </script>
-  </body>
+    document.addEventListener('DOMContentLoaded', () => {
+      hydrateYearsSince();
+    });
+  </script>
+</body>
 </html>
